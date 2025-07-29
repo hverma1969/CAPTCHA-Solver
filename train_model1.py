@@ -6,18 +6,18 @@ import glob
 import shutil
 import sys
 import numpy as np
-from utils import *
+# from utils import *
 # from skimage.io import imread
 import matplotlib.pyplot as plt
 from IPython.display import Image
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import cv2
-train_dir='new_data/train_char'
-test_dir='new_data/test_char'
+train_dir='sample_data/train_char'
+test_dir='sample_data/test_char'
 height=64
 width=64
 batch_size=32
-num_classes=26
+num_classes=47
 # img=cv2.imread('train/0/train_30_00000.png')
 # print(img.shape)
 # print_train()
@@ -86,4 +86,4 @@ history = model.fit_generator(
       validation_data=validation_generator,
       verbose=1,)
 os.makedirs("./models", exist_ok=True)
-model.save('./models/model1.h5')
+model.save('./models/model1.keras')  # Recommended

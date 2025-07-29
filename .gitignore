@@ -1,0 +1,24 @@
+# Data files
+*.csv
+
+# Model files
+*.h5
+*.keras
+model.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter and IPython
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+venv/
+*.gz
+*ubyte
+*.pyd
+*.lib
